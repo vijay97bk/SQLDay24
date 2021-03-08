@@ -28,3 +28,9 @@ select * from employee_payroll;
 select Salary from employee_payroll where name='Dilip';
 
 select * from employee_payroll where start between '2002-01-01' and  GETDATE();
+
+alter table employee_payroll
+add gender char(1);
+
+update employee_payroll set gender='m' where id between 1 and 4;
+

@@ -44,3 +44,13 @@ select sum(salary) from employee_payroll where gender='f';
 select avg(salary) from employee_payroll where gender='f';
 select min(salary) from employee_payroll where gender='f';
 select max(salary) from employee_payroll where gender='f';
+
+alter table employee_payroll
+add phone bigint,
+address varchar(150) not null default 'India',
+department varchar(20) not null default 'HR';
+
+update employee_payroll set address='USA' where id = 2;
+update employee_payroll set address='USA' where id = 6;
+update employee_payroll set address='UAE' where id = 1;
+update employee_payroll set address='UK' where id = 3;

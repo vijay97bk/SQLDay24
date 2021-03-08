@@ -22,3 +22,5 @@ insert into employee_payroll (name, salary, start)values
 
 insert into employee_payroll (name, salary, start)values 
 ('Sachin', 7000, '2001-12-08');
+
+select * from employee_payroll;

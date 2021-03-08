@@ -34,3 +34,13 @@ add gender char(1);
 
 update employee_payroll set gender='m' where id between 1 and 4;
 
+insert into employee_payroll (name, salary, start, gender)
+values ('Rohini', 12000, '2002-02-14', 'f');
+
+insert into employee_payroll (name, salary, start, gender)
+values ('Neha', 22000, '2000-04-18', 'f'),('Lata', 18000, '2004-01-30', 'f');
+
+select sum(salary) from employee_payroll where gender='f';
+select avg(salary) from employee_payroll where gender='f';
+select min(salary) from employee_payroll where gender='f';
+select max(salary) from employee_payroll where gender='f';

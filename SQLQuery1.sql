@@ -54,3 +54,9 @@ update employee_payroll set address='USA' where id = 2;
 update employee_payroll set address='USA' where id = 6;
 update employee_payroll set address='UAE' where id = 1;
 update employee_payroll set address='UK' where id = 3;
+
+sp_rename 'employee_payroll.salary','basic_pay', 'COLUMN';
+
+alter table employee_payroll
+add deduction int, taxable_pay int, income_tax int, net_pay int;
+

@@ -60,3 +60,8 @@ sp_rename 'employee_payroll.salary','basic_pay', 'COLUMN';
 alter table employee_payroll
 add deduction int, taxable_pay int, income_tax int, net_pay int;
 
+update employee_payroll set name='Terissa'  where id = 5;
+update employee_payroll set department='Sales' where id = 5;
+
+insert into employee_payroll (name, basic_pay, start, gender, department)
+values ('Terissa', 17000, '2005-01-11', 'f', 'Marketing');
